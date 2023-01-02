@@ -13,7 +13,7 @@ setup(
     packages=['github_graphql_client'],
     install_requires=[
         'IPython',
-        'ipywidgets'
+        'ipywidgets',
         'python_graphql_client',
         'ratelimit',
     ],
