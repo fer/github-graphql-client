@@ -1,7 +1,5 @@
-"""
-TestClass
-"""
+__version__ = '1.1'
 
-class TestClass:
-    def main():
-        print("works?")
+
+def hello_world():
+    print("This is my first pip package!")
