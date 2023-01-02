@@ -55,7 +55,7 @@ class GitHubGraphQLClient:
 
     @sleep_and_retry
     @limits(calls=MAX_CALLS_PER_MINUTE, period=PERIOD)
-    def query_pagination(self, graphQLfilename, variables: dict, verbose = True, debug = False):
+    def query_pagination(self, graph_ql_filename, variables: dict, verbose = True, debug = False):
         """
             Query with pagination
         """
@@ -73,10 +73,10 @@ class GitHubGraphQLClient:
             )
 
             display(progress_bar)
-        
+
         while (has_next_page):
             variables.update({'afterCursor': after_cursor})
-            query_results = self.query(graphQLfilename, variables)
+            query_results = self.query(graph_ql_filename, variables)
             batch = query_results['data']
 
             key_one = list(batch.keys())[0]
