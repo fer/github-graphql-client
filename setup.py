@@ -5,7 +5,7 @@ setup.py
 from setuptools import setup
 
 setup(
-    name='github-graphql-client',
+    name='github_graphql_client',
     version='0.1',
     description='Module for consuming the Github GraphQL API.',
     author='fer',
