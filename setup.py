@@ -10,7 +10,7 @@ setup(
     description='Module for consuming the Github GraphQL API.',
     author='fer',
     author_email='fer@ferqwerty.com',
-    packages=['github-graphql-client'],
+    packages=['github_graphql_client'],
     install_requires=[
         'numpy',
         'pandas',
